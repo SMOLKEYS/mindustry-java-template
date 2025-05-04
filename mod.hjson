@@ -13,11 +13,14 @@ main: "example.Template"
 # The description of this mod, displayed when viewing information about it.
 description: "A Java mod template."
 
-# The current version of this mod. Letters and/or numbers may be used.
-version: 2.7S
+# The subtitle of this mod, displayed below its name in the mod list.
+subtitle: "Distinctly Java, probably."
+
+# The current version of this mod. Letters, numbers and symbols may be used.
+version: 0
 
 # The required minimum game version to run this mod.
-minGameVersion: 146
+minGameVersion: 149
 
 # If specified, this mod identifies as a Java/JVM mod. 
 java: true
