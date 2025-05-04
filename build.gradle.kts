@@ -23,10 +23,6 @@ plugins {
     kotlin("jvm") version "2.1.20"
 }
 
-rootProject.configurations.all {
-    exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib")
-}
-
 allprojects {
     apply(plugin = "java")
 
@@ -63,6 +59,8 @@ allprojects {
                 useVersion(mindustryVersion)
             }
         }
+
+        exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib")
     }
 
     tasks.withType<JavaCompile> {
